@@ -1,13 +1,17 @@
 <template>
   <div id="app">
     <div id="nav">
-      <h2>myhELO</h2>
+      <router-link to="/"><img alt="myhELO logo" src="./assets/myheloLogoDark.png" style="width:auto;height:35px"></router-link>
       <div id="options">
-        <router-link to="/">Graphs</router-link>
-        <router-link to="/art">Art</router-link>
+        <router-link to="/">Routes</router-link>
+        <router-link to="/substances">Substances</router-link>
       </div>
     </div>
     <router-view/>
+    <div id="footer">
+      <router-link to="/"><img alt="myhELO logo" src="./assets/myheloLogowhite.png" style="width:auto;height:35px"></router-link>
+      <router-link to="/">Art</router-link>
+    </div>
   </div>
 </template>
 
@@ -27,11 +31,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: lightgray;
+  background-color: #E4E4E4;
 }
-#nav h2 {
-  font-size: 1.5em;
-  margin-left: 35px;
+#nav img {
+  margin-left: 25px;
 }
 #options {
   display: flex;
@@ -39,16 +42,35 @@
   justify-content: space-between;
 }
 #options a {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   color: #2c3e50;
   text-decoration: none;
-  margin-right: 35px;
+  margin-right: 30px;
 }
-
 #nav a.router-link-exact-active {
-  color: #42b983;
+  /* color: #42b983; */
   color: black;
-  font-size: 1.25em;
+  font-size: 1.1em;
+}
+#footer {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  opacity: 0.9;
+  flex-direction: row;
+  align-items: center;
+  background-color: #AA92C7;
+  justify-content: space-between;
+}
+#footer a {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin-right: 90px;
+}
+#footer img {
+  margin-left: 35px;
 }
 </style>
