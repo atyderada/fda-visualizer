@@ -1,7 +1,7 @@
 {
   "name": "fda-visualization",
   "version": "0.1.0",
-  "homepage": "https://atyderada.github.io/fda-visualizer/",
+  "homepage": "https://github.com/atyderada/fda-visualizer/",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
