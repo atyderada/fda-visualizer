@@ -12,19 +12,19 @@
             <div id="legend">
               <div class="legendCell">
                 <div style="width:15px; height:12px; background-color: #AA92C7"></div>
-                <p>250-</p>
+                <p>0 - 250</p>
               </div>
               <div class="legendCell">
                 <div style="width:15px; height:12px; background-color: #794692"></div>
-                <p>250+</p>
+                <p>250 - 500</p>
               </div>
               <div class="legendCell"> 
                 <div style="width:15px; height:12px; background-color: #6A468D"></div>
-                <p>500+</p>
+                <p>500 - 2000</p>
               </div>
               <div class="legendCell">
                 <div style="width:15px; height:12px; background-color: #382A62"></div>
-                <p>2000+</p>
+                <p>2000 &gt;</p>
               </div>
             </div>
           </div>
@@ -277,7 +277,7 @@ export default {
 
 <style lang="css" scoped>
 #legend {
-  width: 350px;
+  width: 420px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
