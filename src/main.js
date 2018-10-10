@@ -6,7 +6,7 @@ import VueResource from 'vue-resource';
 
 Vue.use(VueResource);
 
-Vue.http.options.root = 'https://api.fda.gov/drug/label.json?';
+Vue.http.options.root = 'https://api.fda.gov/drug/';
 Vue.config.productionTip = false;
 
 new Vue({

@@ -1,12 +1,11 @@
 <template>
   <div class="home">
-    <h2>Routes of administration</h2>
-    <LineChart></LineChart>
+    <h1 style="margin-top:35px">Routes summary of Human PDs</h1>
+    <LineChart v-bind:url="this.query"></LineChart>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import LineChart from "@/components/D3Graph.vue";
 
 export default {
@@ -14,23 +13,11 @@ export default {
   components: {
     LineChart
   },
-  data () {
-      return {
-          routes: [],
-          name: "Anthony De Rada"
-      }
-  },
-  created: function() {
-        console.log("Graph component created");
-        this.$http.get('https://api.fda.gov/drug/label.json?search=openfda.product_type.exact:"HUMAN PRESCRIPTION DRUG"&count=openfda.route.exact').then(response => {
-            for(let route in response.data.results) {
-                this.routes.push(response.data.results[route]);
-            }
-            console.log(response.data.results);
-        }, error => {
-            console.log("ERROR");
-            console.error(error);
-        });
-    }
+  data() {
+    return {
+      name: "Anthony De Rada",
+      query: 'https://api.fda.gov/drug/label.json?search=openfda.product_type.exact:"HUMAN PRESCRIPTION DRUG"&count=openfda.route.exact'
+    };
+  }
 };
 </script>
