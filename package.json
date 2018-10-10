@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "d3": "^5.7.0",
+    "push-dir": "^0.4.1",
     "vue": "^2.5.17",
     "vue-resource": "^1.5.1",
     "vue-router": "^3.0.1"
