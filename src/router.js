@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
+import Landing from './views/Landing.vue';
+import DrugRoutes from "./views/Routes.vue";
 import MonaLisa from './views/MonaLisa.vue';
 import Depth from "./views/Depth.vue";
 import Graph from "./views/Graph.vue";
@@ -13,8 +14,13 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: Home
+      name: "landing",
+      component: Landing
+    },
+    {
+      path: "/routes",
+      name: "routes",
+      component: DrugRoutes
     },
     {
       path: "/art",

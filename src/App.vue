@@ -3,7 +3,7 @@
     <div id="nav">
       <router-link to="/"><img alt="myhELO logo" src="./assets/myheloLogoDark.png" style="width:auto;height:35px"></router-link>
       <div id="options">
-        <router-link to="/">Routes</router-link>
+        <router-link to="/routes">Routes</router-link>
         <router-link to="/substances">Substances</router-link>
       </div>
     </div>
@@ -46,7 +46,11 @@
   font-weight: bold;
   color: #2c3e50;
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 25px;
+}
+#options a:hover {
+  font-size: 1.1em;
+  color: gray;
 }
 #nav a.router-link-exact-active {
   /* color: #42b983; */
@@ -72,5 +76,13 @@
 }
 #footer img {
   margin-left: 35px;
+}
+h1 {
+  font-size: 1.5em;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.1em;
+  }
 }
 </style>

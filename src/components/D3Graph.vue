@@ -3,7 +3,7 @@
     <Loader v-if="loading"/>
     <div v-if="routes">
       <transition name="fade">
-        <div style="display:flex;flex-direction:row;width:90%;margin:0 auto 45px;">
+        <div id="graphs">
           <div id="bar" style="flex:1;">
             <div id="bChart"></div>
           </div>
@@ -24,7 +24,7 @@
               </div>
               <div class="legendCell">
                 <div style="width:15px; height:12px; background-color: #382A62"></div>
-                <p>2000 &gt;</p>
+                <p>&gt; 2000</p>
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ export default {
       const routeData = [];
       let count = 0;
       for (let index in this.routes) {
-        if (count > 4) {
+        if (count > 3) {
           break;
         }
         let tempRoute = { name: this.routes[index].term, value: this.routes[index].count};
@@ -172,10 +172,10 @@ export default {
       }
 
       var dimensions = {
-        gWidth: 500,
+        gWidth: 360,
         gHeight: 400,
         gMargin: 40,
-        gInnerWidth: 460,
+        gInnerWidth: 340,
         gInnerHeight: 320,
         bMargin: 15
       };
@@ -276,7 +276,62 @@ export default {
 </script>
 
 <style lang="css" scoped>
+#graphs {
+  width:90vw;
+  display:flex;
+  flex-direction:column;
+  margin:0 auto 45px;
+}
 #legend {
+  width: 92vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.legendCell {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.legendCell p {
+  margin-left: 5px;
+}
+#bar {
+  transform: scale()
+}
+#list {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 0px;
+}
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid lightgrey;
+}
+.row * {
+  flex: 1;
+  text-align: center;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.4s ease-out;
+  /* transition: width 0.4 ease-in; */
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+  /* width: 0; */
+}
+@media only screen and (min-width: 1025px) {
+  #graphs {
+    flex-direction:row;
+    margin:0 auto 45px;
+  }
+  #legend {
   width: 420px;
   margin: auto;
   display: flex;
@@ -319,5 +374,6 @@ export default {
 .fade-enter, .fade-leave-to {
   opacity: 0;
   /* width: 0; */
+}
 }
 </style>
