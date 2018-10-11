@@ -34,7 +34,7 @@ export default {
     background-image: linear-gradient(to bottom, 
     #FFFFFF 0px,
     rgb(244, 239, 250) 90%);
-    height: 82vh;
+    height: 84vh;
 }
 #buttons {
     height: 65vh;
@@ -58,10 +58,10 @@ h3 {
     color: #382A62;
     background-color: white;
     opacity: 0.6;
-    height: 200px;
-    line-height: 200px;
+    height: 180px;
+    line-height: 180px;
     border-radius: 50%;
-    width: 200px;
+    width: 180px;
     transition: all 1s ease;
     /* border: 0.5px solid lightgrey; */
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
