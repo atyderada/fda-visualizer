@@ -91,7 +91,7 @@ export default {
         // console.log(tempRoute);
       }
       const dataSet = {children: routeData};
-      const diameter = 360;
+      const diameter = 350;
 
       const bubble = d3.pack()
         .size([diameter, diameter])
@@ -172,10 +172,10 @@ export default {
       }
 
       var dimensions = {
-        gWidth: 360,
+        gWidth: 320,
         gHeight: 400,
         gMargin: 40,
-        gInnerWidth: 340,
+        gInnerWidth: 300,
         gInnerHeight: 320,
         bMargin: 15
       };

@@ -10,7 +10,10 @@
     <router-view/>
     <div id="footer">
       <router-link to="/"><img alt="myhELO logo" src="./assets/myheloLogowhite.png" style="width:auto;height:35px"></router-link>
-      <router-link to="/">Art</router-link>
+      <div style="display:flex;flex-direction:row;align-items:center">
+        <router-link to="/">Art</router-link>
+        <!-- <h4 style="color:white;font-size:0.8em;">@Anthony De Rada</h4> -->
+      </div>
     </div>
   </div>
 </template>
@@ -80,9 +83,17 @@
 h1 {
   font-size: 1.5em;
 }
+h4 {
+  margin-right: 10px;
+  margin-left: 0;
+}
 @media only screen and (min-width: 768px) {
   h1 {
     font-size: 2.1em;
   }
+}
+h4 {
+  margin-right: 25px;
+  margin-left: 0;
 }
 </style>
