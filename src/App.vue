@@ -11,7 +11,7 @@
     <div id="footer">
       <router-link to="/"><img alt="myhELO logo" src="./assets/myheloLogowhite.png" style="width:auto;height:35px"></router-link>
       <div style="display:flex;flex-direction:row;align-items:center">
-        <router-link to="/">Art</router-link>
+        <router-link to="/art">Art</router-link>
         <!-- <h4 style="color:white;font-size:0.8em;">@Anthony De Rada</h4> -->
       </div>
     </div>
