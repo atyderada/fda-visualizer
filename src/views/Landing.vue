@@ -48,10 +48,10 @@ export default {
     background-image: linear-gradient(to bottom, 
     #FFFFFF 0px,
     rgb(244, 239, 250) 90%);
-    height: 92vh;
+    height: 90vh;
 }
 #buttons {
-    height: 80vh;
+    height: 78vh;
     width: 70vw;
     display: flex;
     margin: auto;
@@ -84,9 +84,9 @@ h3 {
     font-weight: 500; 
     color: #382A62;
     background-color: transparent;
-    height: 225px;
+    height: 210px;
     border-radius: 50%;
-    width: 225px;
+    width: 210px;
     transition: all 2s ease;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border: 0.5px solid lightgrey;
